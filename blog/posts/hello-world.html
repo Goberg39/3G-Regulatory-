@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello, world — My Blog</title>
+  <meta name="description" content="The customary first post." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">My Blog</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <article>
+        <header class="post-header">
+          <time datetime="2026-06-20">June 20, 2026</time>
+          <h1>Hello, world</h1>
+        </header>
+
+        <div class="prose">
+          <p>
+            This is a sample post. It exists to show what the different pieces of
+            a written page look like once they are styled, so you can delete it
+            and write your own with confidence.
+          </p>
+
+          <h2>A heading</h2>
+          <p>
+            Paragraphs are set in a readable serif at a comfortable measure. Links
+            within text, like <a href="../index.html">this one back home</a>, are
+            underlined so they are easy to spot.
+          </p>
+
+          <blockquote>
+            A blockquote looks like this — useful for pulling out a line worth
+            lingering on.
+          </blockquote>
+
+          <h3>A smaller heading</h3>
+          <p>Lists work too:</p>
+          <ul>
+            <li>A first point</li>
+            <li>A second point</li>
+            <li>A third, for good measure</li>
+          </ul>
+
+          <p>And inline <code>code</code>, plus a block of it:</p>
+          <pre><code>function greet(name) {
+  return `Hello, ${name}`;
+}</code></pre>
+
+          <hr />
+
+          <p>That's the whole vocabulary. Now go write something real.</p>
+        </div>
+
+        <a class="back-link" href="../index.html">&larr; Back to all posts</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span data-year>2026</span> My Blog</span>
+      <span>Built with plain HTML &amp; CSS</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
