@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting started with this blog — My Blog</title>
+  <meta name="description" content="How the files are organized and how to publish your first post." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">My Blog</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <article>
+        <header class="post-header">
+          <time datetime="2026-06-25">June 25, 2026</time>
+          <h1>Getting started with this blog</h1>
+        </header>
+
+        <div class="prose">
+          <p>
+            This post explains how the site is put together so you can start
+            publishing right away. When you're done reading, delete this file.
+          </p>
+
+          <h2>How a post gets published</h2>
+          <p>There are two steps:</p>
+          <ol>
+            <li>
+              Duplicate one of the files in the <code>posts/</code> folder and
+              rename it — for example <code>posts/my-first-post.html</code>.
+              Edit the title, date, and body inside.
+            </li>
+            <li>
+              Open <code>index.html</code> and copy one of the list items in the
+              post list, pointing it at your new file. Newest posts go on top.
+            </li>
+          </ol>
+
+          <h2>Where things live</h2>
+          <ul>
+            <li><code>index.html</code> — the home page and list of posts</li>
+            <li><code>about.html</code> — the about page</li>
+            <li><code>posts/</code> — one HTML file per post</li>
+            <li><code>css/style.css</code> — all styling and theme colors</li>
+            <li><code>js/main.js</code> — small touches like the footer year</li>
+          </ul>
+
+          <h2>Changing the look</h2>
+          <p>
+            Open <code>css/style.css</code>. The block at the very top holds the
+            colors and fonts as variables — change <code>--accent</code> to recolor
+            every link and highlight at once, or swap the fonts in
+            <code>--font-display</code> and <code>--font-ui</code>. Dark mode is
+            already wired up and follows the reader's system setting.
+          </p>
+
+          <hr />
+
+          <p>That's everything. Happy writing.</p>
+        </div>
+
+        <a class="back-link" href="../index.html">&larr; Back to all posts</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span data-year>2026</span> My Blog</span>
+      <span>Built with plain HTML &amp; CSS</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
